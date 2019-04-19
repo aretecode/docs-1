@@ -39,7 +39,7 @@ We will want `test.html` to be served statically from our [CDN](/docs/v2/domains
 The PHP files can contain any valid PHP code. `api/index.js` needs just to export a **function**:
 
 ```js
-module.exports = (req, res) => {
+module.exp sts = (req, res) => {
   res.end('Welcome to my API')
 }
 ```
@@ -216,7 +216,7 @@ It is possible to take advantage of global state from invocation to invocation i
 
 ### Filesystem
 
-The filesystem is writable inside `/tmp` and persisted if the underlying [container is re-used](/docs/v2/platform/regions-and-providers). The `/tmp` directory is writable for up to `512mb` or storage.
+The filesystem is writable inside `/tmp` and persisted if the underlying [container is re-used](/docs/v2/platform/regions-and-providers). The `/tmp` directory is writable for up to `512mb` of storage.
 
 ### Logging
 
